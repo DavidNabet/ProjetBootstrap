@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+body {
+  font-family: "Montserrat", sans-serif !important;
+  overflow-x: hidden;
+}
+
+/* SECTION 1 */
+#first-section {
+  height: 100vh;
+  width: 100vw;
+  background: url("../asset/background1.png") no-repeat center;
+  background-size: cover;
+}
+
+#first-section header {
+  border-bottom: 2px solid #3f3f3f;
+  margin: 0;
+}
+
+#first-section header img {
+  -webkit-box-shadow: 10px 10px 0px white;
+          box-shadow: 10px 10px 0px white;
+}
+
+#first-section > div {
+  color: #fff;
+  text-align: center;
+}
+
+#first-section > div h1 {
+  text-transform: uppercase;
+  font-size: 10em;
+  padding-top: 20%;
+}
+
+#first-section > div h2 {
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  font-size: 2em;
+  color: #11749e;
+}
+
+#first-section > div div {
+  padding-top: 2%;
+}
+
+#first-section > div div .icon {
+  padding: 2%;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+nav {
+  height: 100%;
+}
+
+nav ul {
+  height: 100%;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li i {
+  color: #fff;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  padding-bottom: 28%;
+  border-bottom: 2px solid #2a9fff;
+}
+
+.marge {
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
+/* FIN SECTION 1 */
+/* SECTION 2 */
+#second-section {
+  width: 100vw;
+  height: 100vh;
+  background: url("../asset/background2.png") no-repeat center;
+  background-size: cover;
+}
+
+#second-section .haut-second h3 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 800;
+  margin-top: 6.5em;
+}
+
+#second-section .bas-second {
+  margin-top: 10%;
+}
+
+#second-section .bas-second div {
+  text-align: center;
+  padding-top: 2%;
+  color: #fff;
+}
+
+#second-section .bas-second div .icon {
+  margin: 1em;
+  padding: 15% 2em;
+  border-radius: 50%;
+  font-size: x-large;
+  background: #2e85aa;
+}
+
+#second-section .bas-second div h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+/* FIN SECTION 2 */
+/* SECTION 3 */
+#third-section {
+  width: 100vw;
+  height: 100vh;
+}
+
+#third-section .top-left {
+  padding: 5% 5% 0 8%;
+  background: #222;
+  color: #fff;
+}
+
+#third-section .top-left h3 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+
+#third-section .top-right {
+  height: 50vh;
+  width: 50vw;
+  background: url("../asset/image1.png") no-repeat;
+  background-size: cover;
+}
+
+#third-section .bottom-left {
+  height: 50vh;
+  width: 50vw;
+  background: url("../asset/image2.png") no-repeat;
+  background-size: cover;
+}
+
+#third-section .bottom-right {
+  background: #f3f3f3;
+  color: #222;
+  padding: 5% 8% 0 5%;
+}
+
+#third-section .bottom-right h3 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 1em;
+}
+
+/* FIN SECTION 3 */
+/* SECTION 4 */
+#four-section {
+  width: 100vw;
+  height: 100vh;
+  background: url("../asset/background3.png") no-repeat;
+  background-size: cover;
+  margin-bottom: 5%;
+}
+
+#four-section .haut-second {
+  color: #333333;
+  margin-top: 13.3%;
+  margin-bottom: 1em;
+}
+
+#four-section .haut-second h3 {
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 15%;
+}
+
+#four-section .bas-second {
+  margin: 2% auto;
+  color: #333333;
+}
+
+#four-section .bas-second div {
+  text-align: center;
+}
+
+#four-section .bas-second div h4 {
+  font-size: 1.2em;
+  margin: 1em auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3f8fb1;
+}
+
+/* FIN SECTION 4 */
+/* SECTION 5 */
+#five-section {
+  width: 100vw;
+  height: 50vh;
+  background: #11749e;
+}
+
+#five-section > div {
+  color: #fff;
+  height: 100%;
+}
+
+#five-section > div > div > div > div > i {
+  font-size: 5em;
+}
+
+/* FIN SECTION 5 */
+/* SECTION 6 */
+#six-section {
+  width: 100vw;
+  height: 100vh;
+  background: url("../asset/background4.png") no-repeat;
+  background-size: cover;
+}
+
+#six-section > div {
+  height: 100%;
+}
+
+/* FIN SECTION 6 */
+/*# sourceMappingURL=style.css.map */

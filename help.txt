@@ -1,0 +1,20 @@
+Pour les icon :
+	http://fontawesome.io/examples/
+	http://fontawesome.io/icons/
+
+Pour le responsive :
+	http://getbootstrap.com/css/
+	http://getbootstrap.com/components/
+
+Pour les font
+	https://fonts.google.com/specimen/Roboto+Condensed
+
+Pour le js:
+	https://developer.mozilla.org/fr/docs/Web/API
+
+Pour les animations:
+	https://daneden.github.io/animate.css/
+	https://www.w3schools.com/jquery/eff_animate.asp
+
+	
+	
