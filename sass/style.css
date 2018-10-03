@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900");
 body {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Montserrat" !important;
   overflow-x: hidden;
 }
 
@@ -30,7 +30,8 @@ body {
 #first-section > div h1 {
   text-transform: uppercase;
   font-size: 10em;
-  padding-top: 20%;
+  padding-top: 15%;
+  font-weight: 700;
 }
 
 #first-section > div h2 {
@@ -41,7 +42,7 @@ body {
 }
 
 #first-section > div div {
-  padding-top: 2%;
+  margin-top: 15%;
 }
 
 #first-section > div div .icon {
@@ -98,7 +99,7 @@ nav ul li a:hover {
   text-transform: uppercase;
   color: #fff;
   font-size: 2em;
-  font-weight: 800;
+  font-weight: 600;
   margin-top: 6.5em;
 }
 
@@ -122,7 +123,7 @@ nav ul li a:hover {
 
 #second-section .bas-second div h4 {
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 1em;
 }
 
@@ -191,7 +192,7 @@ nav ul li a:hover {
   color: #333333;
   text-transform: uppercase;
   font-size: 2em;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 15%;
 }
 
@@ -242,5 +243,180 @@ nav ul li a:hover {
   height: 100%;
 }
 
+#six-section > div > div {
+  color: #fff;
+}
+
+#six-section > div > div h3 {
+  text-transform: uppercase;
+}
+
+#six-section > div > div .first-paragraphe {
+  margin-top: 2em;
+  margin-bottom: 5em;
+}
+
+#six-section > div > div .tips {
+  margin: 1em 0;
+  font-weight: 400;
+  background: #11749e;
+  padding: .5em 1em;
+  border-radius: 5px;
+}
+
 /* FIN SECTION 6 */
+/* SECTION 7 */
+#seven-section {
+  width: 100vw;
+  height: 100vh;
+  background: url("../asset/background5.png") no-repeat;
+  background-size: cover;
+}
+
+#seven-section .haut-second {
+  color: #333333;
+  margin-bottom: 1em;
+}
+
+#seven-section .haut-second h3 {
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 16%;
+  margin-top: 17%;
+}
+
+#seven-section .bas-second {
+  margin: 2% auto;
+  color: #333333;
+}
+
+#seven-section .bas-second div {
+  text-align: center;
+}
+
+#seven-section .bas-second div .wrap {
+  background: #fff;
+  margin: -3em 1.5em 0px 1.5em;
+  padding: 1% 0;
+  position: relative;
+  z-index: 100;
+}
+
+#seven-section .bas-second div .wrap h4 {
+  font-size: 1.2em;
+  margin: 1em 0 .3em 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3f8fb1;
+}
+
+#seven-section .bas-second div .wrap span {
+  font-weight: 600;
+}
+
+/* FIN SECTION 7 */
+/* SECTION 8 */
+#eight-section {
+  width: 100vw;
+  height: 100vh;
+  background: url("../asset/background6.png") no-repeat center center;
+  background-size: cover;
+}
+
+#eight-section > div {
+  color: #fff;
+}
+
+#eight-section > div .haut-second h3 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 15%;
+  margin-top: 25%;
+}
+
+#eight-section > div .bas-second > div > div > input {
+  line-height: 2em;
+}
+
+#eight-section > div .bas-second input[type=text],
+#eight-section > div .bas-second input[type=email],
+#eight-section > div .bas-second input[type=tel],
+#eight-section > div .bas-second textarea {
+  background: transparent;
+  margin-top: 2.5em;
+  border: 1px solid #fafafa;
+}
+
+#eight-section > div .bas-second input[type=text]::-webkit-input-placeholder,
+#eight-section > div .bas-second input[type=email]::-webkit-input-placeholder,
+#eight-section > div .bas-second input[type=tel]::-webkit-input-placeholder,
+#eight-section > div .bas-second textarea::-webkit-input-placeholder {
+  color: #fafafa;
+}
+
+#eight-section > div .bas-second input[type=text]:-ms-input-placeholder,
+#eight-section > div .bas-second input[type=email]:-ms-input-placeholder,
+#eight-section > div .bas-second input[type=tel]:-ms-input-placeholder,
+#eight-section > div .bas-second textarea:-ms-input-placeholder {
+  color: #fafafa;
+}
+
+#eight-section > div .bas-second input[type=text]::-ms-input-placeholder,
+#eight-section > div .bas-second input[type=email]::-ms-input-placeholder,
+#eight-section > div .bas-second input[type=tel]::-ms-input-placeholder,
+#eight-section > div .bas-second textarea::-ms-input-placeholder {
+  color: #fafafa;
+}
+
+#eight-section > div .bas-second input[type=text]::placeholder,
+#eight-section > div .bas-second input[type=email]::placeholder,
+#eight-section > div .bas-second input[type=tel]::placeholder,
+#eight-section > div .bas-second textarea::placeholder {
+  color: #fafafa;
+}
+
+#eight-section > div .bas-second > div:last-child {
+  margin-top: 2em;
+}
+
+#eight-section > div .bas-second > div:last-child input[type=submit] {
+  background: #11749e;
+  padding: .6% 5%;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+}
+
+/* FIN SECTION 8 */
+/*  SECTION 9 */
+#nine-section {
+  width: 100vw;
+  height: 50vh;
+  background: url("../asset/map.png") no-repeat center center;
+  background-size: cover;
+}
+
+/* FIN SECTION 9 */
+/* FOOTER */
+.footer {
+  background: #222;
+  color: #fff;
+  height: 10vh;
+  width: 100vw;
+}
+
+.footer > div {
+  height: 100%;
+}
+
+.footer > div p {
+  margin: 0;
+}
+
+/* FIN FOOTER */
 /*# sourceMappingURL=style.css.map */
