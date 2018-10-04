@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900');
 $height: 100vh;
 $width: 100vw;
 body {
-    font-family: "Montserrat", sans-serif !important;
+    font-family: "Montserrat" !important;
     overflow-x: hidden;
 }
 
@@ -27,7 +27,8 @@ body {
         h1 {
             text-transform: uppercase;
             font-size: 10em;
-            padding-top: 20%;
+            padding-top: 15%;
+            font-weight: 700;
         }
         h2 {
             text-transform: uppercase;
@@ -36,7 +37,7 @@ body {
             color: #11749e;
         }
         div {
-            padding-top: 2%;
+            margin-top: 15%;
             .icon {
                 padding: 2%;
                 border: 1px solid;
@@ -92,7 +93,7 @@ nav {
             text-transform: uppercase;
             color: #fff;
             font-size: 2em;
-            font-weight: 800;
+            font-weight: 600;
             margin-top: 6.5em;
         }
     }
@@ -111,7 +112,7 @@ nav {
             }
             h4 {
                 text-transform: uppercase;
-                font-weight: 800;
+                font-weight: 600;
                 margin-bottom: 1em;
             }
         }
@@ -181,7 +182,7 @@ nav {
             color: #333333;
             text-transform: uppercase;
             font-size: 2em;
-            font-weight: 800;
+            font-weight: 700;
             margin-bottom: 15%;
         }
     }
@@ -234,7 +235,161 @@ nav {
     &>div {
         height: 100%;
     }
+    &>div>div {
+        color: #fff;
+        h3 {
+            text-transform: uppercase;
+        }
+        .first-paragraphe {
+            margin-top: 2em;
+            margin-bottom: 5em;
+        }
+        .tips {
+            margin: 1em 0;
+            font-weight: 400;
+            background: #11749e;
+            padding: .5em 1em;
+            border-radius: 5px;
+        }
+    }
 }
 
 
 /* FIN SECTION 6 */
+
+
+/* SECTION 7 */
+
+#seven-section {
+    width: $width;
+    height: $height;
+    background: url("../asset/background5.png") no-repeat;
+    background-size: cover;
+    .haut-second {
+        color: #333333;
+        margin-bottom: 1em;
+        h3 {
+            color: #333333;
+            text-transform: uppercase;
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 16%;
+            margin-top: 17%;
+        }
+    }
+    .bas-second {
+        margin: 2% auto;
+        color: #333333;
+        div {
+            text-align: center;
+            .wrap {
+                background: #fff;
+                margin: -3em 1.5em 0px 1.5em;
+                padding: 1% 0;
+                position: relative;
+                z-index: 100;
+                h4 {
+                    font-size: 1.2em;
+                    margin: 1em 0 .3em 0;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #3f8fb1;
+                }
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+/* FIN SECTION 7 */
+
+
+/* SECTION 8 */
+
+#eight-section {
+    width: $width;
+    height: $height;
+    background: url("../asset/background6.png") no-repeat center center;
+    background-size: cover;
+    &>div {
+        color: #fff;
+        .haut-second {
+            h3 {
+                text-transform: uppercase;
+                font-size: 2em;
+                font-weight: 700;
+                margin-bottom: 15%;
+                margin-top: 25%;
+            }
+        }
+        .bas-second {
+            &>div>div>input {
+                line-height: 2em;
+            }
+            input[type=text],
+            input[type=email],
+            input[type=tel],
+            textarea {
+                background: transparent;
+                margin-top: 2.5em;
+                border: 1px solid #fafafa;
+                &::placeholder {
+                    color: #fafafa;
+                }
+            }
+            &>div:last-child {
+                margin-top: 2em;
+                input[type=submit] {
+                    background: #11749e;
+                    padding: .6% 5%;
+                    color: #fafafa;
+                    font-weight: 500;
+                    font-size: 1.2em;
+                    cursor: pointer;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+
+/* FIN SECTION 8 */
+
+
+/*  SECTION 9 */
+
+#nine-section {
+    width: $width;
+    height: $height/2;
+    iframe {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* FIN SECTION 9 */
+
+
+/* FOOTER */
+
+.footer {
+    background: #222;
+    color: #fff;
+    height: $height/10;
+    width: $width;
+    &>div {
+        height: 100%;
+        p {
+            margin: 0;
+        }
+    }
+}
+
+
+/* FIN FOOTER */
