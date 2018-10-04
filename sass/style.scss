@@ -6,6 +6,13 @@ body {
     overflow-x: hidden;
 }
 
+a:visited,
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: #fff !important;
+}
+
 
 /* SECTION 1 */
 
@@ -17,7 +24,10 @@ body {
     header {
         border-bottom: 2px solid #3f3f3f;
         margin: 0;
-        img {
+        &>div>img {
+            width: 75%;
+            margin-top: 20%;
+            margin-bottom: 25%;
             box-shadow: 10px 10px 0px white;
         }
     }
@@ -47,6 +57,174 @@ body {
     }
 }
 
+
+/******** ANIMATION *********/
+
+
+/*** 1 ***/
+
+.scrollanimate {
+    animation: scroll 1500ms infinite linear;
+}
+
+@keyframes scroll {
+    from {
+        top: 0;
+        bottom: 0;
+    }
+    to {
+        top: 1em;
+        bottom: 1em;
+    }
+}
+
+@keyframes BoxShadowHide {
+    from {
+        box-shadow: white 10px 10px 0;
+    }
+    50% {
+        box-shadow: white 0px 10px 0;
+    }
+    100% {
+        box-shadow: white 0px 0px 0;
+    }
+}
+
+@keyframes BoxShadowShow {
+    from {
+        box-shadow: white 0px 0px 0;
+    }
+    to {
+        box-shadow: white 10px 10px 0;
+    }
+}
+
+.hideBox {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-name: BoxShadowHide;
+}
+
+.showBox {
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-name: BoxShadowShow;
+}
+
+@-webkit-keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+@keyframes animeZoomIn {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 125% 125%;
+    }
+}
+
+@keyframes animeZoomOut {
+    from {
+        background-size: 125% 125%;
+    }
+    to {
+        background-size: 100%;
+    }
+}
+
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    40%,
+    43% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+    }
+    70% {
+        -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        -webkit-transform: translate3d(0, -15px, 0);
+        transform: translate3d(0, -15px, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(0, -4px, 0);
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+.bounce {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+
+/*** FIN 1 ***/
+
+
+/*** 2 ***/
+
+.zoom {
+    // transform: scale(1.15);
+    // transition: ease-in-out 500ms all;
+    animation-duration: 2s;
+    animation-name: animeZoomIn;
+}
+
+.zoomPas {
+    // transform: none;
+    animation-duration: 2s;
+    animation-name: animeZoomOut;
+}
+
+
+/*** FIN 2 ***/
+
+
+/***** FIN ANIMATIONS ******/
+
 nav {
     height: 100%;
     ul {
@@ -57,14 +235,13 @@ nav {
                 color: #fff;
             }
             a {
-                text-decoration: none;
                 color: #fff;
                 font-weight: 500;
                 &:hover {
                     text-decoration: none;
                     color: #fff;
                     height: 100%;
-                    padding-bottom: 28%;
+                    padding-bottom: 42%;
                     border-bottom: 2px solid #2a9fff;
                 }
             }
@@ -244,7 +421,7 @@ nav {
             margin-top: 2em;
             margin-bottom: 5em;
         }
-        .tips {
+        p.tips {
             margin: 1em 0;
             font-weight: 400;
             background: #11749e;
@@ -252,6 +429,14 @@ nav {
             border-radius: 5px;
         }
     }
+}
+
+.tone {
+    width: 75%;
+}
+
+.ttwo {
+    width: 85%;
 }
 
 
@@ -365,16 +550,11 @@ nav {
 #nine-section {
     width: $width;
     height: $height/2;
-<<<<<<< HEAD
     iframe {
         margin: 0;
         width: 100%;
         height: 100%;
     }
-=======
-    background: url("../asset/map.png") no-repeat center center;
-    background-size: cover;
->>>>>>> 7084844c5f9a3b2ece955ae00eabf28e820c5480
 }
 
 

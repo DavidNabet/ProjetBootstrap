@@ -4,6 +4,13 @@ body {
   overflow-x: hidden;
 }
 
+a:visited,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #fff !important;
+}
+
 /* SECTION 1 */
 #first-section {
   height: 100vh;
@@ -17,7 +24,10 @@ body {
   margin: 0;
 }
 
-#first-section header img {
+#first-section header > div > img {
+  width: 75%;
+  margin-top: 20%;
+  margin-bottom: 25%;
   -webkit-box-shadow: 10px 10px 0px white;
           box-shadow: 10px 10px 0px white;
 }
@@ -51,6 +61,230 @@ body {
   border-radius: 50%;
 }
 
+/******** ANIMATION *********/
+/*** 1 ***/
+.scrollanimate {
+  -webkit-animation: scroll 1500ms infinite linear;
+          animation: scroll 1500ms infinite linear;
+}
+
+@-webkit-keyframes scroll {
+  from {
+    top: 0;
+    bottom: 0;
+  }
+  to {
+    top: 1em;
+    bottom: 1em;
+  }
+}
+
+@keyframes scroll {
+  from {
+    top: 0;
+    bottom: 0;
+  }
+  to {
+    top: 1em;
+    bottom: 1em;
+  }
+}
+
+@-webkit-keyframes BoxShadowHide {
+  from {
+    -webkit-box-shadow: white 10px 10px 0;
+            box-shadow: white 10px 10px 0;
+  }
+  50% {
+    -webkit-box-shadow: white 0px 10px 0;
+            box-shadow: white 0px 10px 0;
+  }
+  100% {
+    -webkit-box-shadow: white 0px 0px 0;
+            box-shadow: white 0px 0px 0;
+  }
+}
+
+@keyframes BoxShadowHide {
+  from {
+    -webkit-box-shadow: white 10px 10px 0;
+            box-shadow: white 10px 10px 0;
+  }
+  50% {
+    -webkit-box-shadow: white 0px 10px 0;
+            box-shadow: white 0px 10px 0;
+  }
+  100% {
+    -webkit-box-shadow: white 0px 0px 0;
+            box-shadow: white 0px 0px 0;
+  }
+}
+
+@-webkit-keyframes BoxShadowShow {
+  from {
+    -webkit-box-shadow: white 0px 0px 0;
+            box-shadow: white 0px 0px 0;
+  }
+  to {
+    -webkit-box-shadow: white 10px 10px 0;
+            box-shadow: white 10px 10px 0;
+  }
+}
+
+@keyframes BoxShadowShow {
+  from {
+    -webkit-box-shadow: white 0px 0px 0;
+            box-shadow: white 0px 0px 0;
+  }
+  to {
+    -webkit-box-shadow: white 10px 10px 0;
+            box-shadow: white 10px 10px 0;
+  }
+}
+
+.hideBox {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: BoxShadowHide;
+          animation-name: BoxShadowHide;
+}
+
+.showBox {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: BoxShadowShow;
+          animation-name: BoxShadowShow;
+}
+
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@-webkit-keyframes animeZoomIn {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 125% 125%;
+  }
+}
+
+@keyframes animeZoomIn {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 125% 125%;
+  }
+}
+
+@-webkit-keyframes animeZoomOut {
+  from {
+    background-size: 125% 125%;
+  }
+  to {
+    background-size: 100%;
+  }
+}
+
+@keyframes animeZoomOut {
+  from {
+    background-size: 125% 125%;
+  }
+  to {
+    background-size: 100%;
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.bounce {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+/*** FIN 1 ***/
+/*** 2 ***/
+.zoom {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: animeZoomIn;
+          animation-name: animeZoomIn;
+}
+
+.zoomPas {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-name: animeZoomOut;
+          animation-name: animeZoomOut;
+}
+
+/*** FIN 2 ***/
+/***** FIN ANIMATIONS ******/
 nav {
   height: 100%;
 }
@@ -68,7 +302,6 @@ nav ul li i {
 }
 
 nav ul li a {
-  text-decoration: none;
   color: #fff;
   font-weight: 500;
 }
@@ -77,7 +310,7 @@ nav ul li a:hover {
   text-decoration: none;
   color: #fff;
   height: 100%;
-  padding-bottom: 28%;
+  padding-bottom: 42%;
   border-bottom: 2px solid #2a9fff;
 }
 
@@ -256,12 +489,20 @@ nav ul li a:hover {
   margin-bottom: 5em;
 }
 
-#six-section > div > div .tips {
+#six-section > div > div p.tips {
   margin: 1em 0;
   font-weight: 400;
   background: #11749e;
   padding: .5em 1em;
   border-radius: 5px;
+}
+
+.tone {
+  width: 75%;
+}
+
+.ttwo {
+  width: 85%;
 }
 
 /* FIN SECTION 6 */
@@ -397,17 +638,12 @@ nav ul li a:hover {
 #nine-section {
   width: 100vw;
   height: 50vh;
-<<<<<<< HEAD
 }
 
 #nine-section iframe {
   margin: 0;
   width: 100%;
   height: 100%;
-=======
-  background: url("../asset/map.png") no-repeat center center;
-  background-size: cover;
->>>>>>> 7084844c5f9a3b2ece955ae00eabf28e820c5480
 }
 
 /* FIN SECTION 9 */
